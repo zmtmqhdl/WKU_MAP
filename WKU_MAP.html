@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> WCH </title>
+</head>
+
+<style>
+
+    body {
+        background-color: lightgray;
+        text-align: center;
+    }
+
+    #box1 {
+        border : 4px solid gray; 
+        margin-left : 800px;
+        margin-right : 800px;
+        text-align : center;
+    }
+
+    #box2 {
+        border : 4px solid gray;
+        margin-left : 400px;
+        margin-right : 400px;
+        text-align : center;
+        height: 500px;
+    }
+
+    #box3 {
+        border : 4px solid gray;
+        margin-left : 50px;
+        margin-right : 50px;
+        text-align : center;
+        height: 800px;
+    }
+
+</style>
+
+
+<tiitle">
+    <p style="font-size:60px; text-align : center; color:rgb(53, 57, 65); margin-bottom: 10px; margin-top: 10px;">
+        <img src="원광대마크.png" width="60" height="60">
+        WCH
+        <img src="원광대마크.png" width="60" height="60">
+</tiitle>
+
+<body>
+    <p style="font-size: 25px; text-align: center; margin-bottom: 10px;">
+        건물/시설 검색
+    </p>
+
+    <div id="box1" style="margin-bottom: 40px;">
+        <p style="font-size:25px;">
+            <p style="font-size: 25px; margin-bottom: 10px;">건물</p> 
+            <select id="a" style="width: 160px; height: 40px; text-align: center;" onchange="change(this)">
+                <option>건물을 선택해주세요.</option>
+                <option value="1" >경영대학</option>
+                <option value="2">경영대학신관</option>
+                <option value="3">교학대학</option>
+                <option value="4">농식품융합대학</option>
+                <option value="5">사범대학</option>
+                <option value="6">사회과학대학</option>
+                <option value="7">사회과학대학신관</option>
+                <option value="8">약학대학</option>
+                <option value="9">융합교양대학</option>
+                <option value="10">의과대학</option>
+                <option value="11">인문대학</option>
+                <option value="12">자연과학대학</option>
+                <option value="13">조형예술디자인대학</option>
+                <option value="14">중앙도서관</option>
+                <option value="15">창의공과대학</option>
+                <option value="16">치과대학</option>
+                <option value="17">프라임관</option>
+                <option value="18">학생지원관</option>
+                <option value="19">한의과대학</option>
+            </select>
+        </p>
+
+        <script>
+            function change(e) {
+                var 경영대학 = ["1층","2층","3층","4층"];
+                var 경영대학신관 = ["1층","2층","3층","4층","5층","6층"];
+                var 교학대학 = ["1층","2층","3층","4층","5층"];
+                var 농식품융합대학 = [];
+                var 사범대학 = ["1층","2층","3층","4층","5층"];
+                var 사회과학대학 = ["B1층","1층","2층","3층","4층","5층"];
+                var 사회과학대학신관 = ["B1층", "1층"];
+                var 약학대학 = ["1층","2층","3층","4층","5층"];
+                var 융합교양대학 = ["1층"];
+                var 의과대학 = ["1층","2층","3층","4층","5층"];
+                var 인문대학 = ["1층","2층","3층","4층","5층"];
+                var 자연과학대학 = ["1층","2층","3층","4층","5층"];
+                var 조형예술디자인대학 = ["1층","2층","3층","4층","5층"];
+                var 중앙도서관 = ["1층","3층","4층","5층","6층","7층"];
+                var 창의공과대학 = []
+                var 치과대학 = ["1층","2층","3층","4층"];
+                var 프라임관 = ["1층","2층","3층","4층"];
+                var 학생지원관 = ["B1층","1층","2층","3층","4층","5층", "6층"];
+                var 한의과대학 = ["1층","2층","3층","4층","5층","6층"];
+                
+                var target = document.getElementById("b");
+
+                if (e.value == 1) var d = 경영대학;
+                else if (e.value == 2) var d = 경영대학신관; 
+                else if (e.value == 3) var d = 교학대학;
+                else if (e.value == 4) var d = 농식품융합대학;
+                else if (e.value == 5) var d = 사범대학;
+                else if (e.value == 6) var d = 사회과학대학;
+                else if (e.value == 7) var d = 사회과학대학신관;
+                else if (e.value == 8) var d = 약학대학;
+                else if (e.value == 9) var d = 융합교양대학;
+                else if (e.value == 10) var d = 의과대학;
+                else if (e.value == 11) var d = 인문대학;
+                else if (e.value == 12) var d = 자연과학대학;
+                else if (e.value == 13) var d = 조형예술디자인대학;
+                else if (e.value == 14) var d = 중앙도서관;
+                else if (e.value == 15) var d = 창의공과대학;
+                else if (e.value == 16) var d = 치과대학;
+                else if (e.value == 17) var d = 프라임관;
+                else if (e.value == 18) var d = 학생지원관;
+                else if (e.value == 19) var d = 한의과대학;
+
+                
+                target.options.length = 0;
+
+                for (x in d) {
+                    var opt = document.createElement("option");
+                    opt.value = d[x];
+                    opt.innerHTML = d[x];
+                    target.appendChild(opt);
+                }
+            }
+
+            function imgload() {
+                var cbbox1 = document.getElementById('a');
+                var sel1 = cbbox1.selectedIndex;
+                var cbbox2 = document.getElementById('b');
+                var sel2 = cbbox2.selectedIndex;
+                
+                var building = cbbox1.options[sel1].text;
+                var floor = cbbox2.options[sel2].text;
+                
+                var basePath = "img/";
+                var fileName = "";
+                
+                // 이미지 파일명 결정
+                if (building === "농식품융합대학" || building === "창의공과대학") {
+                    fileName = "업데이트.png";
+                } else if (building === "중앙도서관" && ["1층", "3층", "4층", "5층", "6층", "7층"].includes(floor)) {
+                    fileName = building + "_" + floor + ".png";
+                } else if (["사회과학대학", "사회과학대학신관", "자연과학대학"].includes(building) && ["B1층", "1층", "2층", "3층", "4층", "5층"].includes(floor)) {
+                    fileName = building + "_" + floor + (building === "사회과학대학" ? ".jpg" : ".png");
+                } else if (["경영대학", "경영대학신관", "교학대학", "사범대학", "약학대학", "융합교양대학", "의과대학", "인문대학", "조형예술디자인대학", "치과대학", "프라임관", "학생지원관", "한의과대학"].includes(building) && ["1층", "2층", "3층", "4층", "5층"].includes(floor)) {
+                    fileName = building + "_" + floor + ".png";
+                } else {
+                    // 예외 처리
+                    fileName = "업데이트.png";
+                }
+                
+                // 이미지 경로 설정
+                document.getElementById('img').src = basePath + fileName;
+            }
+
+                
+        </script>
+        <p style="font-size:25px;">
+            <p style="font-size: 25px; margin-bottom: 10px;">층</p> 
+            <select id="b" style="width: 160px; height: 40px; text-align: center;">
+                <option>층을 선택해주세요.</option>
+            </select>
+        </p>
+        <br>
+        <p>
+            <button onclick="panTo(); imgload();" style="width: 180px; height: 40px;">검색</button> 
+        </p>
+    </div>
+
+    <p style="font-size: 25px; text-align: center; margin-bottom: 10px;">
+        건물 위치
+    </p>
+
+    <div id="box2" style="margin-bottom: 40px;">
+        <p>
+            <div id="map" style="width:1067px;height:485px; margin-left: 5px;margin-right: 5px;"></div>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=45b36cb1f1614e04602812c460ad5d52"></script>
+            <script>
+                var container = document.getElementById('map');
+                var options = {
+                    center: new kakao.maps.LatLng(35.969475, 126.957339), level: 3
+                };
+                var map = new kakao.maps.Map(container, options);
+                // 지도 타입 변경 컨트롤을 생성한다
+                var mapTypeControl = new kakao.maps.MapTypeControl();
+                // 지도의 상단 우측에 지도 타입 변경 컨트롤을 추가한다
+                map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+
+                function panTo() {
+
+                    var data = document.getElementById("a").options[document.getElementById("a").selectedIndex].value;
+                    
+                    // 경영대학
+                    if (data == 1) {       
+                        var moveLatLon = new kakao.maps.LatLng(35.97097690619211, 126.95764627774392);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.97097690619211, 126.95764627774392), // 마커의 좌표
+                        map: map // 마커를 표시할 지도 객체
+                        }); 
+                        
+                    }
+                    // 경영대학신관
+                    else if (data == 2) {
+                        var moveLatLon = new kakao.maps.LatLng(35.970691404469086, 126.95781697246878);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.970691404469086, 126.95781697246878), // 마커의 좌표
+                        map: map
+                        }); 
+                    }
+                    // 교학대학
+                    else if (data == 3) {
+                        var moveLatLon = new kakao.maps.LatLng(35.97076483806483, 126.9552272706339);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.97076483806483, 126.9552272706339), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    // 농식품융합대학
+                    else if (data == 4) {
+                        var moveLatLon = new kakao.maps.LatLng(35.96895316204866, 126.96082773428618);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.96895316204866, 126.96082773428618), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    // 사범대학
+                    else if (data == 5) {
+                        var moveLatLon = new kakao.maps.LatLng(35.96732069857936, 126.96081700545122);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.96732069857936, 126.96081700545122), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    //사회과학대학
+                    else if (data == 6) {
+                        var moveLatLon = new kakao.maps.LatLng(35.97138716500948, 126.95712046557266);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.97138716500948, 126.95712046557266), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    //사회과학대학신관
+                    else if (data == 7) {
+                        var moveLatLon = new kakao.maps.LatLng(35.97132908215901, 126.95771693981438);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.97132908215901, 126.95771693981438), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    //약학대학
+                    else if (data == 8) {
+                        var moveLatLon = new kakao.maps.LatLng(35.96704044202293, 126.9595576372538);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.96704044202293, 126.9595576372538), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    // 융합교양대학
+                    else if (data == 9) {
+                        var moveLatLon = new kakao.maps.LatLng(35.96964559637672, 126.954609116048);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.96964559637672, 126.954609116048), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    //의과대학
+                    else if (data == 10) {
+                        var moveLatLon = new kakao.maps.LatLng(35.965751282485996, 126.95937770305588);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.965751282485996, 126.95937770305588), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    // 인문대학
+                    else if (data == 11) {
+                        var moveLatLon = new kakao.maps.LatLng(35.971245500579094, 126.95874634011948);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.971245500579094, 126.95874634011948), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    // 자연과학대학
+                    else if (data == 12) {
+                        var moveLatLon = new kakao.maps.LatLng(35.96769531236637, 126.95935321962952);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.96769531236637, 126.95935321962952), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    //조형예술디자인대학
+                    else if (data == 13) {
+                        var moveLatLon = new kakao.maps.LatLng(35.97035275200986, 126.95740187856647);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.97035275200986, 126.95740187856647), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    //중앙도서관
+                    else if (data == 14) {
+                        var moveLatLon = new kakao.maps.LatLng(35.97021960142129, 126.95538536470333);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.97021960142129, 126.95538536470333), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    //창의공과대학
+                    else if (data == 15) {
+                        var moveLatLon = new kakao.maps.LatLng(35.967852696694884, 126.9581143927494);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.967852696694884, 126.9581143927494), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    // 치과대학
+                    else if (data == 16) {
+                        var moveLatLon = new kakao.maps.LatLng(35.964995915106556, 126.96059799230547);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.964995915106556, 126.96059799230547), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    // 프라임관
+                    else if (data == 17) {
+                        var moveLatLon = new kakao.maps.LatLng(35.96844433040269, 126.95804854969214);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.96844433040269, 126.95804854969214), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    //학생지원관
+                    else if (data == 18) {
+                        var moveLatLon = new kakao.maps.LatLng(35.96962077758199, 126.95458439897959);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.96962077758199, 126.95458439897959), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        }); 
+                    }
+                    // 한의과대학
+                    else if (data == 19) {
+                        var moveLatLon = new kakao.maps.LatLng(35.964914741219054, 126.95863573731447);
+                        map.panTo(moveLatLon);
+                        var marker = new kakao.maps.Marker({
+		                position: new kakao.maps.LatLng(35.964914741219054, 126.95863573731447), // 마커의 좌표
+		                map: map // 마커를 표시할 지도 객체
+                        });  
+                    }
+            }
+            </script>       
+        </p>
+    </div>
+
+    <p style="font-size: 25px; text-align: center; margin-bottom: 10px;">
+        시설 위치
+    </p>
+
+    <div id="box3">
+        <img id="img" src="" width="1750" height="800">
+    </div>
+</body>
+</html>
