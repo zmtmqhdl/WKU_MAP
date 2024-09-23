@@ -9,7 +9,7 @@
 
 ## 📁 파일 설명 및 사용법
 - [**VX_BOT.py**](https://github.com/zmtmqhdl/WKU_MAP/blob/main/WKU_MAP.html)
-   가나다라마바사아
+  이거 왜이러지
 
 
   <img src="https://github.com/user-attachments/assets/418361da-42c0-4bfb-8977-9d9db2e89a94" width="40%">
