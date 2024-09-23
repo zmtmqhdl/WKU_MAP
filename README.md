@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center" style="font-family: 'Gungsuh', sans-serif;"> WKU MAP </h1>
-<h3 align="center" style="font-family: 'Gungsuh', sans-serif;"> 원광대학교 내 캠퍼스 건물 및 층별 배치도를 카카오맵을 통해 사용자에게 제공하는 웹페이지 </h3>
+<h3 align="center" style="font-family: 'Gungsuh', sans-serif;"> 원광대학교 내 캠퍼스 건물 위치를 카카오맵을 통해 안내하고 선택한 건물의 층별 배치도를 사용자에게 이미지로 제공하는 웹페이지 </h3>
 
 <br>
 
