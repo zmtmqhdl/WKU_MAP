@@ -13,8 +13,13 @@
 
   <br>
 
-  (1) 명령어를 통해 사용자에게 제공되는 전적 이미지  
-  <img src="https://github.com/user-attachments/assets/418361da-42c0-4bfb-8977-9d9db2e89a94" width="40%">  
+  (1) 웹페이지 초기 화면
+  <img src="https://github.com/user-attachments/assets/d1b8a821-47ce-4383-8c9f-561c20b17d5f" width="40%">
+  (2) 건물 및 층 선택 후 건물의 위치가 마커로 표기된 카카오맵
+  <img src="https://github.com/user-attachments/assets/d1b8a821-47ce-4383-8c9f-561c20b17d5f" width="40%">
+  (3) 카카오맵 하단에서 제공되는 선택한 층의 건물 배치도
+  <img src="https://github.com/user-attachments/assets/d1b8a821-47ce-4383-8c9f-561c20b17d5f" width="40%">
+  
 
 <br>
 
