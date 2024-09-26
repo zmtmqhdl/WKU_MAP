@@ -7,6 +7,14 @@
 
 <br>
 
+## 🧑‍💻 참여 인원
+|  <img src="https://github.com/user-attachments/assets/9bbe9e79-04b6-44b1-a68c-eae5a049c2ad" width="100" height="100">  |
+|:---:|
+| 김태훈 |
+| Back-End, Front-End|
+
+<br>
+
 ## 📁 파일 설명 및 사용법
 - [**WKU_MAP.html**](https://github.com/zmtmqhdl/WKU_MAP/blob/main/WKU_MAP.html)  
   건물과 층을 선택한 후 검색하면, 카카오맵 API를 통해 건물 위치가 지도에 마커로 표시되고, 선택한 층의 배치도가 이미지로 제공됩니다.
