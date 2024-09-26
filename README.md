@@ -18,7 +18,7 @@
 ## 📁 파일 설명 및 사용법
 - [**WKU_MAP.html**](https://github.com/zmtmqhdl/WKU_MAP/blob/main/WKU_MAP.html)  
   건물과 층을 선택한 후 검색하면, 카카오맵 API를 통해 건물 위치가 지도에 마커로 표시되고, 선택한 층의 배치도가 이미지로 제공됩니다.
-
+  
   <br>
 
   (1) 웹페이지 초기 화면  
