@@ -15,6 +15,11 @@
 
 <br>
 
+## 🗓️ 개발 기간
+2021.09 ~ 2021.12
+
+<br>
+
 ## 📁 파일 설명 및 사용법
 - [**WKU_MAP.html**](https://github.com/zmtmqhdl/WKU_MAP/blob/main/WKU_MAP.html)  
   건물과 층을 선택한 후 검색하면, 카카오맵 API를 통해 건물 위치가 지도에 마커로 표시되고, 선택한 층의 배치도가 이미지로 제공됩니다.
@@ -30,6 +35,10 @@
   (3) 카카오맵 하단에서 제공되는 선택한 층의 건물 배치도  
   <img src="https://github.com/user-attachments/assets/d04adee2-56de-4423-8605-ee52ae7d0a14" width="80%">  
   
+<br>
+
+## ✏️ 배운 내용
+- Kakao 지도 API를 학습하고 적용해볼 수 있었습니다.
 
 <br>
 
