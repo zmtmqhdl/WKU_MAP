@@ -37,12 +37,8 @@
 <br>
 
 ## ✏️ 배운 내용
-Front-End
-- MarkUp 구조 학습
-  - HTML5, CSS3를 통해 웹페이지 제작
-- Kakao Maps API 학습
-  - 좌표를 통해 특정 지역의 Map 사용
-  - 지정한 좌에 마커 표시
+- HTML5, CSS3를 사용하며 MarkUp 구조를 학습하였습니다.
+- Kakao Maps API를 사용해보며 Kakao Maps 경험을 쌓았습니다.
 
 <br>
 
