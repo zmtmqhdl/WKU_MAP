@@ -34,7 +34,7 @@
   
   (3) 건물 배치도 화면  
   <img src="https://github.com/user-attachments/assets/d04adee2-56de-4423-8605-ee52ae7d0a14" width="80%">  
-  Kakao Map 하단에서 제공되는 선택한 층의 건물 배치도입니다.  
+  Kakao Map 하단에서 제공되는 선택한 층의 건물 배치도입니다.
   
 <br>
 
