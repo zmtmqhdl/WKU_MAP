@@ -25,14 +25,16 @@
 
   <br>
 
-  (1) 웹페이지 초기 화면  
+  (1) 초기 화면
   <img src="https://github.com/user-attachments/assets/d1b8a821-47ce-4383-8c9f-561c20b17d5f" width="80%">
   
-  (2) 건물 및 층 선택 후 건물의 위치가 마커로 표기된 카카오맵  
+  (2) Kakao Map 화면 
   <img src="https://github.com/user-attachments/assets/80dc2aa9-f14b-4294-8c4f-3a1e66a6a811" width="80%">
+  건물 및 층 선택 후 건물의 위치가 Kakao Map에 마커로 표기됩니다.
   
-  (3) 카카오맵 하단에서 제공되는 선택한 층의 건물 배치도  
+  (3) 건물 배치도 화면
   <img src="https://github.com/user-attachments/assets/d04adee2-56de-4423-8605-ee52ae7d0a14" width="80%">  
+  Kakao Map 하단에서 제공되는 선택한 층의 건물 배치도입니다.
   
 <br>
 
