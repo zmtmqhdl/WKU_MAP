@@ -2,8 +2,8 @@
   <img src="https://github.com/user-attachments/assets/9730fce3-c2fe-4434-b77a-8a8bea0011cb" width="50%">
 </p>
 
-## 🖥️ WKU MAP
-원광대학교 내 캠퍼스 건물 위치를 Kakao Map에 마커를 사용해 표시하고, 선택한 건물의 층별 배치도를 사용자에게 이미지로 제공하는 WEB
+## 🖥️ University MAP
+OO대학교 내 캠퍼스 건물 위치를 Kakao Map에 마커를 사용해 표시하고, 선택한 건물의 층별 배치도를 사용자에게 이미지로 제공하는 WEB
 
 <br>
 
